@@ -1,0 +1,55 @@
+table {
+    border: 2px solid #DDD9D5;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+img {
+    border-radius: 30px;
+    height: 120px;
+    padding: 5px;
+    width: 120px;
+    
+}
+
+th {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+td {
+    padding: 10px;
+    border: 2px solid #DDD9D5;
+}
+
+/*color and background-color style*/
+
+#soul {
+    background-color: #D6923D;
+    color: black;
+    padding: 10px;
+}
+
+#time {
+    background-color: #008001;
+    color: black;
+}
+
+#space {
+    background-color: #005792;
+    color: black;
+}
+
+#mind {
+    background-color: #FFFF05;
+    color: black;
+}
+#reality {
+    background-color: #C12A2E;
+    color: black;
+}
+#power {
+    background-color: #8175B7;
+    color: black;
+}

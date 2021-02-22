@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Superhero aplication</title>
+        <meta name="description" content="t08. Superhero aplication">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h2>Superhero Form</h2>
+        <fieldset class="border">
+        
+        <fieldset class="border">
+        <legend>About the Superhero</legend>
+        <form>
+            <label for="rName">Real Name</label>
+            <input type="text" onclick="this.value=''" id="rName" name="rName" value="Superhero real name" autofocus>
+            <label for="shName">Superhero Name</label>
+            <input type="text" onclick="this.value=''" id="shName" value="Superhero alias">
+            <label for="age">Age</label>
+            <input type="number" id="age" min="1" max="999" step="1">
+            <br><br>
+            <label for="about">About</label>
+            <textarea style="text" maxlength="500" name="about" class="aboutText" onclick="this.value=''" value="Information about superhero, max 500 symbols">Information about superhero, max 500 symbols</textarea>
+            <br><br>
+            <label for="choose">Photo:</label>
+            <input type="file" id="choose">
+        </form>
+        </fieldset>
+
+        <fieldset class="border">
+            <legend>Powers</legend>
+            <form>
+                <input type="checkbox" id="telekines" name="telekines" value="Telekinesis">
+                <label for="telekines">Telekinesis</label>
+                <input type="checkbox" id="sstrenght" name="sstrenght" value="Strenght">
+                <label for="sstrenght">Super strenght or speed</label>
+                <input type="checkbox" id="shape" name="shape" value="Shapeshifting">
+                <label for="shape">Shapeshifting</label>
+                <input type="checkbox" id="flight" name="flight" value="Flight">
+                <label for="flight">Flight</label>
+                <input type="checkbox" id="elemen" name="element" value="Elemental">
+                <label for="element">Elemental control</label>
+                <input type="checkbox" id="other" name="other" value="Other">
+                <label for="other">Other</label>
+                <br><br>
+                <label for="level">Level of control:</label>
+                <input type="range" id="level" name="level" min="0" max="10" step="1" value="Level">
+            </form>
+        </fieldset>
+
+        <fieldset class="border">
+            <legend>Origin of Powers</legend>
+            <form>
+                <input type="radio" id="unknown" name="unknown" value="Unknown">
+                <label for="unknown">Unknown</label>
+                <input type="radio" id="lab" name="lab" value="Freak lab accident">
+                <label for="lab">Freak lab accident</label>
+                <input type="radio" id="wise" name="wise" value="Wise">
+                <label for="shape">Choosen by an accident wise being</label>
+                <input type="radio" id="isntHuman" name="isntHuman" value="Is not Human">
+                <label for="flight">The superhero is not human</label>
+                <input type="radio" id="other1" name="other1" value="Other">
+                <label for="other1">Other</label>
+            </form>
+        </fieldset>
+        <br>
+        <form>
+            <button onclick="document.getElementById('myInput').value = ''">CLEAR</button>
+            <button type="submit" value="SEND">SEND</button>
+        </form>
+        </fieldset>
+    </body>
+
+</html>

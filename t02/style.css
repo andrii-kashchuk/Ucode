@@ -1,0 +1,33 @@
+body {
+    width: auto;
+}
+
+input {
+    border: 2px solid blue;
+    border-radius: 4px;
+    color: green;
+    line-height: 2em;
+    padding: 0 10px 0 10px;
+    width: 92%;
+}
+
+.search:active {
+    color: green;
+}
+
+.search:hover {
+    border: 2px solid blue;
+    color: green;
+}
+
+button {
+    border-radius: 4px;
+    color: green;
+    line-height: 2em;
+    padding: 0 10px 0 10px;
+    width: 5%;
+}
+
+button:hover, .search:hover {
+    color: red;
+}

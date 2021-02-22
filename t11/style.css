@@ -1,0 +1,11 @@
+body {
+    width: 100%;
+}
+
+.box {
+    display: block;
+    width: -200ex;
+    height: 20px;
+    border: 1px solid red;
+    background-color: #DDDDDD;
+}
