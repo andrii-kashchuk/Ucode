@@ -1,33 +1,34 @@
-html, body {
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 p {
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: #4095B5;
     color: white;
 }
 
 div img {
-    display: block;
+    display: flex;
     margin-right: auto;
     margin-left: auto;
-}
-
-div img {
-    filter: none;
 }
 
 .d1, .d2, .d3, .d4, .d5, .d6, .d7 {
-    display: inline-block;
+    display: flex;
+    width: 14%;
+    min-width: 120px;
+    height: auto;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
 }
 
-div:hover {
+.d1:hover, .d2:hover, .d3:hover, .d4:hover, .d5:hover, .d6:hover, .d7:hover {
     box-shadow: 0 14px 28px grey, 0 10px 10px grey;
 }
 

@@ -1,11 +1,34 @@
-body {
-    width: 100%;
+.box {
+    background-color: lightgray;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
+  }
+  
+h1 {
+    margin-left: 70px;
+    margin-bottom: 50px;
 }
 
-.box {
-    display: block;
-    width: -200ex;
-    height: 20px;
-    border: 1px solid red;
-    background-color: #DDDDDD;
-}
+.box::after {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    content: ""; /* drawing the border */
+    position: absolute; /* positioning of the border */
+    width: 100%; /* the same width as .box */
+    height: calc(100% + 50px); /* increase the height of border */
+    top: -25px; /* make correct positioning by vertical axe*/
+    left: -1px; /* make correct positioning by horizontal axe */
+  }
+
+.box::before {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: calc(100% + 50px);
+    top: -1px;
+    left: -25px;
+  }
