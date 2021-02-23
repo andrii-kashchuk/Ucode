@@ -10,6 +10,8 @@ p {
     height: auto;
     background-color: #4095B5;
     color: white;
+    text-align: center;
+    margin-top: 1px;
 }
 
 div img {
